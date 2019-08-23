@@ -1,0 +1,192 @@
+.container{
+  width: 80%;
+  margin: auto;
+  /* overflow: auto; */
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* <NavBar > */
+  /*All links*/
+    nav.navbar{
+      width: 100%;
+      padding: 0px 2px;
+      margin: auto;
+      height: auto;
+      overflow: auto;
+      background: #eee;
+    }
+.logo-image{
+  max-width: 48px;
+  float: left;
+  vertical-align: middle;
+
+}
+.wrapper{
+  display: inline-flex;
+}
+
+    .logo{
+      float: left;
+      display: inline-flex;
+      width: 55%;
+      text-align: left;
+    }
+    .logo-name{
+      display: block;
+      line-height: 1.3;
+      /* vertical-align: middle; */
+      float: left;
+      padding-left: 10px;
+      font-size: 1.2em;
+      font-weight: 800;
+    }
+    .menu{
+      float: right;
+      width: 30%;
+      text-align: right;
+      font-size: 2.4em;
+    }
+    .menu, .logo{
+      padding: 10px 0px;
+    }
+    .navlinks{
+      width: 100%;
+      display: none;
+    }
+    .navlink{
+      display: block;
+      text-decoration: none;
+      margin: 4px auto;
+      padding: 2px 5px;
+      color: #1e1a57;
+      border-bottom: 1px solid #c33;
+
+    }
+    .navlink:hover{
+      background: #1e1a57;
+      color: #3dd;
+    }
+    .navlinks.show{
+      display: block;
+      clear: both;
+    }
+    
+    @media(min-width: 760px){
+       .menu{
+        display: none;
+      }
+      .logo{
+        display: inline-flex;
+        width: 25%;
+        vertical-align: middle;
+      }
+      
+      .navlinks{
+        
+        display: inline-flex;
+        float: right;
+        width: 60%;
+        padding: 10px 0px;
+        margin: auto ;
+        text-align: right;
+        background-color: #068;
+        line-height: 100%;
+        /* vertical-align: middle;
+        position: relative;top: 50%;bottom: 50%; */
+      } 
+      .navlink{
+        display: inline;
+        color: #eee;
+        
+      }
+}
+/* </NavBar > */
+.social-media{
+  /* max-width: 50px; */
+  width: 100%;
+  height: auto;
+  padding: 2px 25px;
+  background: #ddd;
+  color: #ecc;
+  text-align: right;
+  /* position: fixed; bottom: 10px; right: 12px; */
+}
+.social-media a i{
+  padding: 4px 3px;
+  margin: 0px 6px;
+  font-size: 1.4em;
+}
+.btn{
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+/* Feedback */
+
+    form[name='contact']{
+      width: 100%;
+      padding: 15px;
+    }
+    form[name='contact'] input, textarea{
+      width: 100%;
+      padding: 3px 4px;
+      margin: 5px auto;
+      resize: none;
+      font-size: 1.3em;
+      font-weight: 300;
+    }
+/* Footer */
+ul.features{
+  width: 100%;
+ 
+  background-color: #036;
+  color: #eee;
+  /* position: fixed; bottom: 0px; left: 0px; */
+
+}
+ul.features li{
+  display: inline-flex;
+  /* width: 20%; */
+  text-align: center;
+  margin: 5px 2px;
+  border: 1px solid fuchsia;
+  padding: 15px 7px;
+  background-color: #036;
+}
+.ft-item h4{
+  font-size: 1.2em;
+  padding: 5px 0px;
+  margin: auto;
+}
+
+.ft-item i{
+  font-size: 1.8em;
+  font-weight: 500;
+  display: block;
+}
+
+@media screen and (max-width: 440px){
+ ul.features li{
+ 
+  text-align: center;
+  margin: 0px;
+  border: 1px solid fuchsia;
+  padding: 8px 15px;
+}
+
+.ft-item h4{
+  font-size: 0.51em;
+  
+}
+
+.ft-item i{
+  font-size: 1em;
+  font-weight: 500;
+  
+}
+}
